@@ -1,0 +1,5 @@
+n=input().split()
+x=int(n[0])
+k=int(n[1])
+poly=input()
+print(eval(poly)==(k))
