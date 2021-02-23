@@ -1,5 +1,10 @@
 from collections import namedtuple
-n=int(input())
-cols=input().split()
+n = int(input())
+scol = ','.join(input().split())
+Student =namedtuple('Student',scol)
+sum = 0
 for i in range(n):
-  pass
+    row = input().split()
+    student = Student(*row)
+    sum += int(student.MARKS)
+print(sum/n)
