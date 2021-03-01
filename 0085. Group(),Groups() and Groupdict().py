@@ -1,0 +1,2 @@
+import re
+s=input()
